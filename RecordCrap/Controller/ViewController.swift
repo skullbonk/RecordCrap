@@ -11,9 +11,27 @@ import AVFoundation
 
 class ViewController: UIViewController
 {
-	var audioRecorder:AVAudioRecorder!
+	var audioRecorder:AVAudioRecorder?
+	var audioPlayer:AVAudioPlayer?
+	var alertController:UIAlertController?
+	alertController = UIAlertController(title: "")
 	
 	func record()
+	{
+		
+	}
+	
+	func play()
+	{
+		
+	}
+	
+	func send()
+	{
+	
+	}
+	
+	func displayShareSheet()
 	{
 		
 	}
@@ -23,6 +41,10 @@ class ViewController: UIViewController
 		
 	}
 	
+	@IBAction func playButtonTap(_ sender: UIButton)
+	{
+		
+	}
 	
 	@IBAction func sendButtonTap(_ sender: UIButton)
 	{
