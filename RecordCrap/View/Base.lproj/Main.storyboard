@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.30.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.19.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,62 +14,33 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RecordCrap" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <stackView key="view" opaque="NO" multipleTouchEnabled="YES" contentMode="center" axis="vertical" distribution="fillProportionally" alignment="center" id="IDp-fh-0o6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jE-ur-y4H" userLabel="recordButton">
-                                <rect key="frame" x="0.0" y="451" width="375" height="215.5"/>
-                                <color key="backgroundColor" red="0.36470588235294116" green="0.61176470588235299" blue="1" alpha="0.20075924295633801" colorSpace="custom" customColorSpace="sRGB"/>
-                                <viewLayoutGuide key="safeArea" id="FGT-rX-ktS"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="77"/>
-                                <color key="tintColor" red="0.23921568627450979" green="0.074509803921568626" blue="0.066666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="record">
-                                    <color key="titleColor" red="1" green="0.44313725490196076" blue="0.49411764705882355" alpha="0.94630281690140849" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" red="1" green="0.49056928533116873" blue="0.49712006785460927" alpha="0.2573998679577465" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="recordButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qac-Sf-78B"/>
-                                </connections>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTt-r3-EpQ" userLabel="SendButton">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="222.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                <state key="normal" title="Send"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ar0-tp-Oic" userLabel="sendButton">
-                                <rect key="frame" x="0.0" y="20" width="375" height="215.5"/>
-                                <color key="backgroundColor" red="1" green="0.44313725490196076" blue="0.49411764705882355" alpha="0.1969080105619718" colorSpace="custom" customColorSpace="sRGB"/>
-                                <viewLayoutGuide key="safeArea" id="Dkb-uz-vAy"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="77"/>
-                                <color key="tintColor" red="0.23921568627450979" green="0.074509803921568626" blue="0.066666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="send">
-                                    <color key="titleColor" red="0.36470588235294116" green="0.61176470588235299" blue="1" alpha="0.94630281689999995" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" red="1" green="0.49056928529999999" blue="0.49712006790000002" alpha="0.25739986799999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="sendButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CDl-k3-Ttu"/>
-                                </connections>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lkt-Cx-J1D" userLabel="PlayButton">
+                                <rect key="frame" x="0.0" y="222.5" width="375" height="222"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                <state key="normal" title="Play"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spd-UM-SwL" userLabel="playButton">
-                                <rect key="frame" x="0.0" y="235" width="375" height="216"/>
-                                <color key="backgroundColor" red="0.56624540441176474" green="0.87855228028711485" blue="0.76481037727591039" alpha="0.19803587147887325" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="77"/>
-                                <state key="normal" title="play">
-                                    <color key="titleColor" red="0.25882352941176467" green="0.74509803921568629" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="playButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E7d-mV-c07"/>
-                                </connections>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dP3-e8-x7H" userLabel="RecordButton">
+                                <rect key="frame" x="0.0" y="444.5" width="375" height="222.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                <state key="normal" title="Record"/>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.9278052137305699" green="0.92269282795776719" blue="0.8881928519750717" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="tintColor" red="0.23921568627450979" green="0.074509803921568626" blue="0.066666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="9jE-ur-y4H" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="8qT-ex-gpG"/>
-                            <constraint firstItem="ar0-tp-Oic" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="BOF-mi-Aja"/>
-                            <constraint firstItem="spd-UM-SwL" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="C8R-Ec-kdR"/>
-                            <constraint firstItem="ar0-tp-Oic" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Nka-oM-Xcu"/>
-                            <constraint firstItem="spd-UM-SwL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="kA2-w0-b9D"/>
-                            <constraint firstItem="9jE-ur-y4H" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="kwJ-gz-iWt"/>
+                            <constraint firstItem="dP3-e8-x7H" firstAttribute="width" secondItem="IDp-fh-0o6" secondAttribute="width" id="1Cn-Mm-eGP"/>
+                            <constraint firstItem="NTt-r3-EpQ" firstAttribute="width" secondItem="IDp-fh-0o6" secondAttribute="width" id="3Ud-RF-A6n"/>
+                            <constraint firstItem="Lkt-Cx-J1D" firstAttribute="width" secondItem="IDp-fh-0o6" secondAttribute="width" id="alY-6f-Xwx"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
+                        <viewLayoutGuide key="safeArea" id="hNC-tM-jMu"/>
+                    </stackView>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

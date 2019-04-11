@@ -14,7 +14,6 @@ class ViewController: UIViewController
 	var audioRecorder:AVAudioRecorder?
 	var audioPlayer:AVAudioPlayer?
 	var alertController:UIAlertController?
-	alertController = UIAlertController(title: "")
 	
 	func record()
 	{
@@ -36,20 +35,7 @@ class ViewController: UIViewController
 		
 	}
 	
-	@IBAction func recordButtonTap(_ sender: UIButton)
-	{
-		
-	}
 	
-	@IBAction func playButtonTap(_ sender: UIButton)
-	{
-		
-	}
-	
-	@IBAction func sendButtonTap(_ sender: UIButton)
-	{
-		
-	}
 	
 
 }
