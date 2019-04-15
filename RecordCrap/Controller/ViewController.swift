@@ -15,8 +15,15 @@ class ViewController: UIViewController
 	var audioPlayer:AVAudioPlayer?
 	var alertController:UIAlertController?
 	
+	@IBOutlet weak var sendButtonOut: UIButton!
+	
+	@IBOutlet weak var playButtonOut: UIButton!
+	
+	@IBOutlet weak var recordButtonOut: UIButton!
+	
 	func record()
 	{
+		audioRecorder.record()
 		
 	}
 	
@@ -30,12 +37,28 @@ class ViewController: UIViewController
 	
 	}
 	
-	func displayShareSheet()
+	func displayShareSheet(sender:UIView)
+	{
+	
+	}
+	
+	
+	@IBAction func sendButtonTouch(_ sender: UIButton)
+	{
+		let activityController = UIActivityViewController(activityItems: [recordButtonOut.], applicationActivities: nil)
+		present(activityController, animated: true, completion: nil)
+	}
+	
+	@IBAction func playButtonTouch(_ sender: UIButton)
 	{
 		
 	}
 	
-	
+	@IBAction func recordButtonTouch(_ sender: UIButton)
+	{
+		audioRecorder.record()
+		
+	}
 	
 
 }

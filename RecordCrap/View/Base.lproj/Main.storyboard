@@ -21,19 +21,35 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTt-r3-EpQ" userLabel="SendButton">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="222.5"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
-                                <state key="normal" title="Send"/>
+                                <state key="normal" title="Send">
+                                    <color key="titleColor" red="0.36450722940000002" green="0.61137407259999998" blue="1" alpha="0.94630281689999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="SendButtonTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ejY-Fy-R7X"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lkt-Cx-J1D" userLabel="PlayButton">
                                 <rect key="frame" x="0.0" y="222.5" width="375" height="222"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
-                                <state key="normal" title="Play"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" red="0.25882352939999997" green="0.74509803919999995" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playButtonTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oGy-wN-TyO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dP3-e8-x7H" userLabel="RecordButton">
                                 <rect key="frame" x="0.0" y="444.5" width="375" height="222.5"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
-                                <state key="normal" title="Record"/>
+                                <state key="normal" title="Record">
+                                    <color key="titleColor" red="1" green="0.4431372549" blue="0.4941176471" alpha="0.94630281689999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="recordButtonTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9rd-8K-5G9"/>
+                                </connections>
                             </button>
                         </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="dP3-e8-x7H" firstAttribute="width" secondItem="IDp-fh-0o6" secondAttribute="width" id="1Cn-Mm-eGP"/>
                             <constraint firstItem="NTt-r3-EpQ" firstAttribute="width" secondItem="IDp-fh-0o6" secondAttribute="width" id="3Ud-RF-A6n"/>
@@ -41,6 +57,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hNC-tM-jMu"/>
                     </stackView>
+                    <connections>
+                        <outlet property="PlayButtonOut" destination="Lkt-Cx-J1D" id="F5s-S6-Tlg"/>
+                        <outlet property="SendButtonOut" destination="NTt-r3-EpQ" id="aff-Hs-6eP"/>
+                        <outlet property="recordButtonOut" destination="dP3-e8-x7H" id="wYw-UK-7G7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
